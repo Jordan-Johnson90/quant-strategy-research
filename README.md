@@ -34,3 +34,4 @@ Quantitative research and backtesting framework for rule-based price action stra
 ```
 ## Strategy & Research Modules
 * **`hoagie_stats_logger.py`** — Vectorized multi-timeframe inside-bar compression ("Hoagie") detector. Identifies consecutive inside bars nested within a higher-timeframe mother bar, filters by rolling ATR-14 and EMA-20 regime state, and logs path-dependent MFE/MAE excursion telemetry.
+* **`holy_grail_strategy.py`** — Event-driven implementation of the Raschke/Connors ADX(14) + EMA(20) trend-pullback strategy, complete with rolling stop-order management, Point A/B swing targets, single re-entry logic, and daily loss/drawdown circuit breakers.
