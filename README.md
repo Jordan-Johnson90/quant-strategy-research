@@ -32,3 +32,5 @@ Quantitative research and backtesting framework for rule-based price action stra
 |     - Asymmetric payoff & volatility regime analysis  |
 +-------------------------------------------------------+
 ```
+## Strategy & Research Modules
+* **`hoagie_stats_logger.py`** — Vectorized multi-timeframe inside-bar compression ("Hoagie") detector. Identifies consecutive inside bars nested within a higher-timeframe mother bar, filters by rolling ATR-14 and EMA-20 regime state, and logs path-dependent MFE/MAE excursion telemetry.
