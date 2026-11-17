@@ -1,3 +1,11 @@
+"""
+Multi-Timeframe Inside-Bar Compression ("Hoagie") Research Module
+
+Resamples 1-minute intraday OHLCV bar data into higher-timeframe structures using
+Polars, engineers rolling volatility (ATR-14) and trend (EMA-20) features, and
+identifies multi-bar consolidation zones for vectorized MFE/MAE excursion analysis.
+"""
+
 import polars as pl
 import numpy as np
 from datetime import datetime, timedelta
